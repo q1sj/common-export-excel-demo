@@ -1,0 +1,3 @@
+excel:
+  max-rows: 100
+  save-path: C:/export

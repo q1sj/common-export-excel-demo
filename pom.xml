@@ -30,9 +30,8 @@
         <dependency>
             <groupId>com.github.q1sj</groupId>
             <artifactId>export-spring-boot-starter</artifactId>
-            <version>3.0.2</version>
+            <version>3.0.3</version>
         </dependency>
-
     </dependencies>
     <repositories>
         <repository>

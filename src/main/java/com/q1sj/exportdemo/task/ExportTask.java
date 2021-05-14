@@ -1,7 +1,8 @@
 package com.q1sj.exportdemo.task;
 
 import com.q1sj.exportdemo.pojo.ExportRecord;
-import com.qsj.export.ExportContext;
+import com.q1sj.exportdemo.service.ExportRecordService;
+import com.q1sj.export.ExportContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -15,10 +16,11 @@ import java.util.List;
 public class ExportTask{
     @Autowired
     private ExportContext<ExportRecord> exportContext;
+    @Autowired
+    private ExportRecordService exportRecordService;
 
     public void run(String ages){
-        // 模拟从数据库查询待导出记录
-        List<ExportRecord> exports = Arrays.asList(ExportRecord.mock());
-        exportContext.export(exports);
+        List<ExportRecord> list = exportRecordService.list();
+        exportContext.export(list);
     }
 }

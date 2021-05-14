@@ -1,5 +1,6 @@
 excel:
   #单excel最大行数
-  max-rows: 10000
-  #excel存放根路径
-  save-path: C:/export
+#  maxRows: 1
+#  #excel存放根路径
+  savePath: C:/export/
+#  enableSubList: true

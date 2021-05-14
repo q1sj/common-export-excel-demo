@@ -1,6 +1,6 @@
 package com.q1sj.exportdemo.pojo;
 
-import com.qsj.export.AbstractExportRecord;
+import com.q1sj.export.AbstractExportRecord;
 
 public class ExportRecord extends AbstractExportRecord {
     //根据业务增加字段

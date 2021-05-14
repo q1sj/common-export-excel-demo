@@ -17,6 +17,11 @@ class UserServiceImpl implements UserService, Export {
     }
 
     @Override
+    public Class<?> getExportEntityClass() {
+        return User.class;
+    }
+
+    @Override
     public List<?> getList(String conditions) {
         // 此处模拟 根据条件查询 返回结果集
         return Arrays.asList(new User("qsj", 18), new User("admin", 19));

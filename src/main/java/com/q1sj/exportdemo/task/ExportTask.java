@@ -1,12 +1,11 @@
 package com.q1sj.exportdemo.task;
 
+import com.q1sj.export.ExportContext;
 import com.q1sj.exportdemo.pojo.ExportRecord;
 import com.q1sj.exportdemo.service.ExportRecordService;
-import com.q1sj.export.ExportContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.Arrays;
 import java.util.List;
 
 /**
